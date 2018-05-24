@@ -14,6 +14,7 @@ public class Main {
         int postFormCounter = 1;
 
         try {
+            System.out.println("Introduzca la url: ");
             Scanner sc = new Scanner(System.in);
             String url = sc.nextLine();
             Document document = Jsoup.connect(url).get();
