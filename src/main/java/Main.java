@@ -56,7 +56,7 @@ public class Main {
                 }
                 postFormCounter++;
 
-                Connection.Response response = Jsoup.connect(url)
+                Connection.Response response = Jsoup.connect(inputTag.absUrl("action"))
                         .data("asignatura", "practica1")
                         .header("matricula", "20120412")
                         .method(Connection.Method.POST)
